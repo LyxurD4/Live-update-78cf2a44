@@ -1,8 +1,11 @@
 var myVar = setInterval(tijd, 1000);
 
 function tijd() {
-    var tijd = new Date()
-    document.getElementById("klok").innerHTML = tijd;
+    var d = new Date();
+    var uren = d.getHours();
+    var minuten = d.getMinutes();
+    var seconden = d.getSeconds();
+    document.getElementById("klok").innerHTML = uren + ":" + minuten + ":" + seconden;
 }
 
 
